@@ -1,0 +1,140 @@
+
+.body {
+    .rowItem1{
+        background: rgba(0,0,0,0.1);
+        .content{
+            width: 1000px;
+            margin:0 auto;
+            padding-top:30px;
+            padding-bottom:30px;
+            .title{
+                font-size: 20px;
+                line-height: 25px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            .content{
+                p{
+                    line-height: 25px;
+                }
+            }
+        }
+
+    }
+    .rowItem2{
+        .content{
+            width: 1000px;
+            margin:0 auto;
+            .title{
+                font-size: 20px;
+                line-height: 25px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            .content{
+                .col-md-6{
+                    padding-left: 0;
+                    padding-right: 0;
+                    padding-bottom: 30px;
+                    p{
+                        &:first-child{
+                            font-weight: bold;
+                            font-size: 16px;
+                        }
+                    }
+                    div{
+                        margin-top: 15px;
+                        text-align: center;
+                        span{
+                            font-size: 50px;
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+
+
+
+.head {
+    .headImg {
+        height: 50px;
+        img {
+            height: 100%;
+            margin-left: 100px;
+        }
+    }
+    .headLinks {
+        margin-right: 100px;
+        a {
+            line-height: 50px;
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: blue;
+            }
+            margin-right: 50px;
+        }
+    }
+    .banner {
+        margin-top: 50px;
+        height: 350px;
+        img {
+            height: 100%;
+            width: 100%;
+
+        }
+    }
+}
+
+.foot {
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
+    .footContent{
+        width: 1000px;
+        margin: 0 auto;
+        line-height: 40px;
+
+        .footLeft {
+
+        }
+        .footRight {
+            span {
+                a {
+                    position: relative;
+                    margin: 0 10px 0 10px;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

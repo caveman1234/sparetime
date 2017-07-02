@@ -1,0 +1,67 @@
+.body .rowItem1 {
+  background: rgba(0, 0, 0, 0.1); }
+  .body .rowItem1 .content {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    .body .rowItem1 .content .title {
+      font-size: 20px;
+      line-height: 25px;
+      padding-top: 30px;
+      padding-bottom: 30px; }
+    .body .rowItem1 .content .content p {
+      line-height: 25px; }
+.body .rowItem2 .content {
+  width: 1000px;
+  margin: 0 auto; }
+  .body .rowItem2 .content .title {
+    font-size: 20px;
+    line-height: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .body .rowItem2 .content .content .col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 30px; }
+    .body .rowItem2 .content .content .col-md-6 p:first-child {
+      font-weight: bold;
+      font-size: 16px; }
+    .body .rowItem2 .content .content .col-md-6 div {
+      margin-top: 15px;
+      text-align: center; }
+      .body .rowItem2 .content .content .col-md-6 div span {
+        font-size: 50px; }
+
+.head .headImg {
+  height: 50px; }
+  .head .headImg img {
+    height: 100%;
+    margin-left: 100px; }
+.head .headLinks {
+  margin-right: 100px; }
+  .head .headLinks a {
+    line-height: 50px;
+    text-decoration: none;
+    color: black;
+    margin-right: 50px; }
+    .head .headLinks a:hover {
+      color: blue; }
+.head .banner {
+  margin-top: 50px;
+  height: 350px; }
+  .head .banner img {
+    height: 100%;
+    width: 100%; }
+
+.foot {
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3); }
+  .foot .footContent {
+    width: 1000px;
+    margin: 0 auto;
+    line-height: 40px; }
+    .foot .footContent .footRight span a {
+      position: relative;
+      margin: 0 10px 0 10px; }
+
+/*# sourceMappingURL=index2.css.map */
