@@ -1,7 +1,12 @@
+.head .banner{
+    height: 360px;
+}
+
+
 
 .body {
     .rowItem1{
-        background: rgba(0,0,0,0.1);
+        background: rgba(200,200,200,0.1);
         .content{
             width: 1000px;
             margin:0 auto;
@@ -16,38 +21,52 @@
             .content{
                 p{
                     line-height: 25px;
+                    color: #999999 ;
+                    font-size: 14px;
                 }
             }
         }
-
     }
     .rowItem2{
         .content{
             width: 1000px;
             margin:0 auto;
             .title{
-                font-size: 20px;
+                font-size: 24px;
+                font-weight: bold;
                 line-height: 25px;
                 padding-top: 30px;
                 padding-bottom: 30px;
+                color: #333333;
             }
             .content{
                 .col-md-6{
                     padding-left: 0;
-                    padding-right: 0;
+                    padding-right: 60px;
                     padding-bottom: 30px;
+                    &:after{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        width: 50px;
+                        height: 2px;
+                        background: rgba(0,0,0,0.3);
+                        top:-10px;
+                        left: 0;
+                    }
                     p{
+                        color:#999999;
+                        font-size: 14px;
                         &:first-child{
                             font-weight: bold;
-                            font-size: 16px;
+                            font-size: 18px;
+                            color: #333333;
                         }
                     }
                     div{
-                        margin-top: 15px;
+                        margin-top: 91px;
                         text-align: center;
-                        span{
-                            font-size: 50px;
-                        }
+                        margin-bottom: 110px;
                     }
 
 
@@ -57,60 +76,6 @@
     }
 }
 
-
-
-.head {
-    .headImg {
-        height: 50px;
-        img {
-            height: 100%;
-            margin-left: 100px;
-        }
-    }
-    .headLinks {
-        margin-right: 100px;
-        a {
-            line-height: 50px;
-            text-decoration: none;
-            color: black;
-            &:hover {
-                color: blue;
-            }
-            margin-right: 50px;
-        }
-    }
-    .banner {
-        margin-top: 50px;
-        height: 350px;
-        img {
-            height: 100%;
-            width: 100%;
-
-        }
-    }
-}
-
-.foot {
-    box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
-    .footContent{
-        width: 1000px;
-        margin: 0 auto;
-        line-height: 40px;
-
-        .footLeft {
-
-        }
-        .footRight {
-            span {
-                a {
-                    position: relative;
-                    margin: 0 10px 0 10px;
-                }
-            }
-        }
-    }
-
-}
 
 
 

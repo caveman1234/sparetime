@@ -1,5 +1,8 @@
+.head .banner {
+  height: 360px; }
+
 .body {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(200, 200, 200, 0.1);
   padding-top: 20px;
   padding-bottom: 20px; }
   .body .title .content {
@@ -8,7 +11,11 @@
     .body .title .content div {
       margin-bottom: 10px; }
     .body .title .content label {
-      cursor: pointer; }
+      cursor: pointer;
+      user-select: none; }
+      .body .title .content label input {
+        cursor: pointer;
+        transform: scale(1.5, 1.5); }
     .body .title .content span {
       cursor: pointer; }
   .body .content {
@@ -21,41 +28,10 @@
       margin-bottom: 15px;
       padding: 10px; }
       .body .content .item:hover {
-        box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.4); }
+        box-shadow: 0 0 7px 1px rgba(222, 222, 222, 0.7); }
       .body .content .item .media .media-body div {
-        line-height: 25px; }
+        line-height: 30px; }
         .body .content .item .media .media-body div span {
-          line-height: 25px; }
-
-.head .headImg {
-  height: 50px; }
-  .head .headImg img {
-    height: 100%;
-    margin-left: 100px; }
-.head .headLinks {
-  margin-right: 100px; }
-  .head .headLinks a {
-    line-height: 50px;
-    text-decoration: none;
-    color: black;
-    margin-right: 50px; }
-    .head .headLinks a:hover {
-      color: blue; }
-.head .banner {
-  margin-top: 50px;
-  height: 350px; }
-  .head .banner img {
-    height: 100%;
-    width: 100%; }
-
-.foot {
-  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3); }
-  .foot .footContent {
-    width: 1000px;
-    margin: 0 auto;
-    line-height: 40px; }
-    .foot .footContent .footRight span a {
-      position: relative;
-      margin: 0 10px 0 10px; }
+          line-height: 30px; }
 
 /*# sourceMappingURL=index5.css.map */
