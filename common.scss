@@ -1,27 +1,35 @@
 *{margin:0;padding: 0;list-style: none;}
+.blue{
+    color:#00ad9f !important;
+}
 .head {
-    .headImg {
-        height: 50px;
-        img {
-            height: 100%;
-            margin-left: 100px;
-        }
-    }
-    .headLinks {
-        margin-right: 100px;
-        a {
-            line-height: 50px;
-            text-decoration: none;
-            color: black;
-            &:hover {
-                color: blue;
+
+    .headWrap{
+        border-bottom:1px solid #00ad9f;
+        .headImg {
+            height: 60px;
+            img {
+                height: 100%;
+                margin-left: 100px;
             }
-            margin-right: 50px;
+        }
+        .headLinks {
+            margin-right: 100px;
+
+            a {
+                line-height: 60px;
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    color: #00ad9f;
+                }
+                margin-right: 50px;
+            }
         }
     }
     .banner {
         overflow: hidden;
-        margin-top: 50px;
+        //margin-top: 50px;
         height: 500px;
         img {
             height: 100%;
@@ -30,7 +38,7 @@
 }
 
 .foot {
-    box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 -1px 3px rgba(222,222,222,0.2);
     .footContent{
         width: 1000px;
         margin: 0 auto;

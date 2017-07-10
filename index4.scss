@@ -5,7 +5,8 @@
     padding-top: 20px;
     .row1{
         border-bottom:1px solid rgba(0,0,0,0.1);
-        margin-top: 80px;
+        margin-top: 100px;
+        padding-bottom: 100px;
         .container1{
             width: 1100px;
             margin:0 auto;
@@ -20,6 +21,7 @@
                     font-family: FZY1JW--GB1-0;
                     color:#999999;
                     font-size: 14px;
+                    margin-left: 33px;
                 }
             }
             .content{
@@ -28,7 +30,7 @@
                 padding-bottom: 40px;
                 .col-md-4{
                     .left{
-                        margin-right: 20px;
+                        //margin-right: 20px;
                         div{
                             overflow: hidden;
                             width:100px;
@@ -40,9 +42,15 @@
 
                     }
                     .right{
+                        background: #f5f5f5;
+                        padding:3px 15px 3px 15px;
+                        height: 130px;
+                        overflow: hidden;
                         ul{
+
+
                             li{
-                                color:#666666;
+                                color:#999999;
                                 line-height: 30px;
                             }
                         }
@@ -55,18 +63,21 @@
     }
     .row2{
         border-bottom:1px solid rgba(0,0,0,0.1);
-        margin-top: 100px;
+        padding-bottom: 100px;
+        //margin-top: 100px;
         .container2{
             width: 800px;
             margin:0 auto;
             position: relative;
             padding: 20px;
+            margin-top: 100px;
 
             .title{
                 width: 205px;
                 margin:0 auto;
                 p{
                     color: #999999;
+                    margin-left: -30px;
                 }
 
             }
@@ -135,13 +146,14 @@
     }
     .row3{
         border-bottom:1px solid rgba(0,0,0,0.1);
-        margin-top: 100px;
-        padding-bottom: 47px;
+        //margin-top: 100px;
+        padding-bottom: 100px;
         .container3{
             width: 800px;
             margin:0 auto;
             position: relative;
             padding: 20px;
+            margin-top: 100px;
             .title{
                 width: 130px;
                 margin:20px auto;
@@ -149,18 +161,19 @@
                     color:#999999;
                 }
             }
-            .col-md-3{
+            .hasNext{
                 text-align: center;
                 position: relative;
                 &::after{
-                    content: ">";
+                    content: "";
+                    width: 20px;
+                    height: 20px;
+                    background-image: url('./imgs/img_next.png');
+                    background-repeat: no-repeat;
                     position: absolute;
                     right:-10px;
-                    top:32px;
+                    top:46px;
                     font-size: 25px;
-                }
-                &:last-child::after{
-                    content: "";
                 }
 
             }

@@ -16,10 +16,11 @@
         }
     }
     .tab-content {
+
         .itemContent {
             width: 1000px;
-            margin: 15px auto;
-            box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.3);
+            margin: 0px auto;
+            box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.3);
             border-radius: 5px;
             padding:20px;
             &:first-child{
@@ -28,6 +29,13 @@
                     line-height: 25px;
                 }
             }
+        }
+        #home{
+
+
+        }
+        #profile{
+
         }
     }
 }
