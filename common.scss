@@ -1,4 +1,11 @@
 *{margin:0;padding: 0;list-style: none;}
+.checked-color{
+    border-radius: 2px;
+    overflow: hidden;
+    background:#00ad9f;
+
+    color: white;
+}
 .blue{
     color:#00ad9f !important;
 }
@@ -45,11 +52,13 @@
         line-height: 40px;
 
         .footLeft {
+            color:#999999;
 
         }
         .footRight {
             span {
                 a {
+                    color:#999999;
                     position: relative;
                     margin: 0 10px 0 10px;
                 }

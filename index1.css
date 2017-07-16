@@ -1,9 +1,20 @@
 .head .banner {
   height: 360px; }
 
+.title-checked {
+  color: #00ad9f;
+  position: relative; }
+  .title-checked::after {
+    content: '';
+    position: absolute;
+    top: calc( 100% - 2px);
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #00ad9f; }
+
 .body {
-  margin-top: 15px;
-  margin-bottom: 80px; }
+  background: rgba(200, 200, 200, 0.1); }
   .body .nav {
     position: relative; }
     .body .nav li {
@@ -20,5 +31,56 @@
     .body .tab-content .itemContent:first-child p {
       text-indent: 2em;
       line-height: 25px; }
+  .body .title {
+    line-height: 57px;
+    background: white;
+    color: #333333; }
+    .body .title span {
+      cursor: pointer;
+      user-select: none;
+      display: inline-block;
+      font-size: 18px; }
+  .body .content1 {
+    margin-top: 20px;
+    padding-bottom: 80px; }
+    .body .content1 .wrap {
+      background: white;
+      box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      padding: 20px;
+      position: relative; }
+      .body .content1 .wrap::after {
+        content: '';
+        width: 0;
+        height: 0;
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: -10px;
+        transform: translate(-96px, 0);
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid white; }
+  .body .content2 {
+    margin-top: 20px;
+    padding-bottom: 80px; }
+    .body .content2 .wrap {
+      background: white;
+      box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      padding: 20px;
+      position: relative; }
+      .body .content2 .wrap::after {
+        content: '';
+        width: 0;
+        height: 0;
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: -10px;
+        transform: translate(80px, 0);
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid white; }
 
 /*# sourceMappingURL=index1.css.map */
