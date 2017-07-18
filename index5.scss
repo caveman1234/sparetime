@@ -10,7 +10,12 @@
             width: 300px;
             margin:0 auto;
             div{
-                margin-bottom: 10px;
+                margin-bottom: 15px;
+                span{
+                    border-radius: 2px;
+                    padding:5px 8px 5px 8px;
+                    user-select: none;
+                }
             }
             label{
                 cursor: pointer;

@@ -42,9 +42,9 @@
 		</div>
 		<div class="pull-right headLinks">
 			<a href="./index4.html">首页</a>
-			<a href="./index1.html">标准／保障</a>
+			<a href="./index1.html">服务项目</a>
 			<a href="./index5.html">招聘信息</a>
-			<a href="./index3.html">家政服务</a>
+			<a href="./index3.html">家政资讯</a>
 			<a href="./index2-1.html" class="blue">关于我们</a>
 		</div>
 	</div>
@@ -62,7 +62,6 @@
 	<div class="title text-center">
 		<span class="about-us-title titleHook">公司简介</span>
 		<span class="titleHook">公司理念</span>
-		<span class="titleHook">联系我们</span>
 	</div>
 	<div class="content">
 		<div class="content1">
@@ -75,6 +74,8 @@
 			<p>
 				法轮大法好	法轮大法好	法轮大法好	法轮大法好	法轮大法好	法轮大法好	法轮大法好	法轮大法好
 			</p>
+			<div style="height: 30px;"></div>
+			<div id="map" style="width: 100%;height: 600px;"></div>
 		</div>
 		<div class="content2" style="display: none;">
 			<h1>222</h1>
@@ -84,9 +85,6 @@
 			<h1>222</h1>
 			<h1>222</h1>
 			<h1>222</h1>
-		</div>
-		<div class="content3" style="display: block">
-			<div id="map" style="width: 1000px;height: 600px;"></div>
 		</div>
 	</div>
 
@@ -104,17 +102,13 @@
 		<div class="col-md-6 footLeft">
 			版权所有:xxxxxxxxxxxxxxxxxxxxx
 		</div>
-		<div class="col-md-6 footRight">
-			<span>
-				<span class="glyphicon glyphicon-user"></span>
-				<span class="glyphicon glyphicon-user"></span>
-				<span class="glyphicon glyphicon-earphone"></span>
-			</span>
-			<span>
+		<div class="col-md-6 footRight clearfix">
+
+			<span class="pull-right">
 				<a href="#">联系我们</a> |
-				<a href="#">加入我们</a> |
+				<a href="./index5.html">加入我们</a> |
 				<a href="#">意见反馈</a> |
-				<a href="#">保障／标准</a>
+				<a href="./index1.html">服务项目</a>
 			</span>
 		</div>
 	</div>
@@ -162,11 +156,7 @@
                 height : 110,              //高度
                 panel  : "panel",         //检索结果面板
                 enableAutoPan : true,     //自动平移
-                searchTypes   :[
-//                    BMAPLIB_TAB_SEARCH,   //周边检索
-//                    BMAPLIB_TAB_TO_HERE,  //到这里去
-//                    BMAPLIB_TAB_FROM_HERE //从这里出发
-                ]
+                searchTypes   :[]
             });
             var marker = new BMap.Marker(poi); //创建marker对象
             marker.enableDragging(); //marker可拖拽
@@ -182,34 +172,49 @@
 
 
             //浏览器定位
-            var geolocation = new BMap.Geolocation();
-            geolocation.getCurrentPosition(function(r){
-                if(this.getStatus() == BMAP_STATUS_SUCCESS){
-
-//                    var mk = new BMap.Marker(r.point);
-//                    map.addOverlay(mk);
-//                    map.panTo(r.point);
-
-
-
-
-                    var pt = new BMap.Point(104.072135,30.663571);//citycenter
-                    var myIcon = new BMap.Icon("./imgs/fox.gif", new BMap.Size(150,160));
-                    var marker2 = new BMap.Marker(r.point,{icon:myIcon});  // 创建标注
-//                    var marker2 = new BMap.Marker(pt,{icon:myIcon});  // 创建标注
-                    map.addOverlay(marker2);              // 将标注添加到地图中
-                    marker2.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
-
-
-
-
-
-
-                }
-                else {
-
-                }
-            },{enableHighAccuracy: true})
+//            var geolocation = new BMap.Geolocation();
+//            geolocation.getCurrentPosition(function(r){
+//                if(this.getStatus() == BMAP_STATUS_SUCCESS){
+//
+//                   // var mk = new BMap.Marker(r.point);
+//                   // map.addOverlay(mk);
+//                   // map.panTo(r.point);//移动到这个点
+//
+//
+//
+//
+//                    var pt = new BMap.Point(104.072135,30.663571);//citycenter
+//                    var myIcon = new BMap.Icon("./imgs/fox.gif", new BMap.Size(150,160));
+//                    var marker2 = new BMap.Marker(r.point,{icon:myIcon});  // 创建标注
+////                    var marker2 = new BMap.Marker(pt,{icon:myIcon});  // citycenter
+//                    map.addOverlay(marker2);              // 将标注添加到地图中
+//                    marker2.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+//
+//
+//                    var opts = {
+//                        position : r.point,    // 指定文本标注所在的地理位置
+//                        offset   : new BMap.Size(30, -30)    //设置文本偏移量
+//                    }
+//                    var label = new BMap.Label("我的位置", opts);  // 创建文本标注对象
+//                    label.setStyle({
+//                        color : "blue",
+//                        fontSize : "12px",
+//                        height : "20px",
+//                        lineHeight : "20px",
+//                        fontFamily:"微软雅黑"
+//                    });
+//                    map.addOverlay(label);
+//
+//
+//
+//
+//
+//
+//                }
+//                else {
+//
+//                }
+//            },{enableHighAccuracy: true})
 
 
         };

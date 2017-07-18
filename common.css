@@ -5,6 +5,7 @@
 
 .checked-color {
   border-radius: 2px;
+  padding: 5px 8px 5px 8px;
   overflow: hidden;
   background: #00ad9f;
   color: white; }

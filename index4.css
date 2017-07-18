@@ -1,3 +1,6 @@
+img {
+  max-width: 500% !important; }
+
 .body {
   overflow: hidden;
   background: white;
@@ -11,15 +14,16 @@
       margin: 0 auto;
       position: relative; }
       .body .row1 .container1 .title {
-        position: relative;
-        left: calc( 50% - 120px ); }
-        .body .row1 .container1 .title h1 {
-          font-family: FZY1JW--GB1-0; }
+        position: relative; }
+        .body .row1 .container1 .title h3 {
+          font-family: FZY1JW--GB1-0;
+          text-align: center; }
         .body .row1 .container1 .title p {
           font-family: FZY1JW--GB1-0;
           color: #999999;
           font-size: 14px;
-          margin-left: 33px; }
+          margin-left: 33px;
+          text-align: center; }
       .body .row1 .container1 .content {
         margin-top: 30px;
         padding-bottom: 40px; }

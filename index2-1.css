@@ -36,7 +36,7 @@
         position: absolute;
         left: 50%;
         top: -10px;
-        transform: translate(-141px, 0);
+        transform: translate(-77px, 0);
         border-right: 10px solid transparent;
         border-left: 10px solid transparent;
         border-bottom: 10px solid white; }
@@ -55,6 +55,7 @@
       .body .content .content1 p {
         line-height: 25px; }
     .body .content .content2 {
+      overflow: hidden;
       padding: 20px; }
       .body .content .content2::after {
         content: '';
@@ -64,7 +65,7 @@
         position: absolute;
         left: 50%;
         top: -10px;
-        transform: translate(-10px, 0);
+        transform: translate(58px, 0);
         border-right: 10px solid transparent;
         border-left: 10px solid transparent;
         border-bottom: 10px solid white; }
