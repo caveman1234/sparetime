@@ -16,7 +16,7 @@
         font-size: 0;
         line-height: 50px;
         span{
-            font-size: 18px;
+            font-size: 14px;
             display: inline-block;
             padding:5px 30px 5px 30px;
             user-select: none;
@@ -27,16 +27,18 @@
         width: 1000px;
         margin:0 auto;
         background: white;
-        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+
         margin-top: 20px;
         border-radius: 3px;
         position: relative;
+        box-shadow: 0px 2px 6px #999999;
 
         &>div{
 
 
         }
         .content1{
+
             padding:10px 20px 20px 20px;
             &::after{
                 content: '';
@@ -57,7 +59,7 @@
                 color:#00ad9f;
                 &::after{
                     content: '';
-                    width: 60px;
+                    width: 47px;
                     height: 2px;
                     background: #00ad9f;
                     position: absolute;

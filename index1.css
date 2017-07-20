@@ -39,7 +39,7 @@
       cursor: pointer;
       user-select: none;
       display: inline-block;
-      font-size: 18px;
+      font-size: 14px;
       margin-right: 90px; }
   .body .content1 {
     margin-top: 20px;
@@ -58,7 +58,7 @@
         position: absolute;
         left: 50%;
         top: -10px;
-        transform: translate(-293px, 0);
+        transform: translate(-271px, 0);
         border-right: 10px solid transparent;
         border-left: 10px solid transparent;
         border-bottom: 10px solid white; }
@@ -79,7 +79,7 @@
         position: absolute;
         left: 50%;
         top: -10px;
-        transform: translate(-128px, 0);
+        transform: translate(-120px, 0);
         border-right: 10px solid transparent;
         border-left: 10px solid transparent;
         border-bottom: 10px solid white; }
@@ -100,7 +100,7 @@
         position: absolute;
         left: 50%;
         top: -10px;
-        transform: translate(31px, 0);
+        transform: translate(21px, 0);
         border-right: 10px solid transparent;
         border-left: 10px solid transparent;
         border-bottom: 10px solid white; }
@@ -121,7 +121,7 @@
         position: absolute;
         left: 50%;
         top: -10px;
-        transform: translate(187px, 0);
+        transform: translate(166px, 0);
         border-right: 10px solid transparent;
         border-left: 10px solid transparent;
         border-bottom: 10px solid white; }
