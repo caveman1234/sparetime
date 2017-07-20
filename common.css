@@ -13,21 +13,23 @@
 .blue {
   color: #00ad9f !important; }
 
-.head .headWrap {
+.head .headBorder {
   border-bottom: 1px solid #00ad9f; }
-  .head .headWrap .headImg {
-    height: 60px; }
-    .head .headWrap .headImg img {
-      height: 100%;
-      margin-left: 100px; }
-  .head .headWrap .headLinks {
-    margin-right: 100px; }
-    .head .headWrap .headLinks a {
+  .head .headBorder .headWrap {
+    width: 1000px;
+    margin: 0 auto; }
+    .head .headBorder .headWrap .headImg {
+      height: 60px; }
+      .head .headBorder .headWrap .headImg img {
+        height: 100%; }
+    .head .headBorder .headWrap .headLinks a {
+      display: inline-block;
+      height: 60px;
       line-height: 60px;
       text-decoration: none;
       color: black;
       margin-right: 50px; }
-      .head .headWrap .headLinks a:hover {
+      .head .headBorder .headWrap .headLinks a:hover {
         color: #00ad9f; }
 .head .banner {
   overflow: hidden;
@@ -42,7 +44,8 @@
     margin: 0 auto;
     line-height: 40px; }
     .foot .footContent .footLeft {
-      color: #999999; }
+      color: #999999;
+      white-space: nowrap; }
     .foot .footContent .footRight span a {
       color: #999999;
       position: relative;

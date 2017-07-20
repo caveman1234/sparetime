@@ -11,30 +11,36 @@
     color:#00ad9f !important;
 }
 .head {
-
-    .headWrap{
+    .headBorder{
         border-bottom:1px solid #00ad9f;
-        .headImg {
-            height: 60px;
-            img {
-                height: 100%;
-                margin-left: 100px;
-            }
-        }
-        .headLinks {
-            margin-right: 100px;
+        .headWrap{
 
-            a {
-                line-height: 60px;
-                text-decoration: none;
-                color: black;
-                &:hover {
-                    color: #00ad9f;
+            width:1000px;
+            margin:0 auto;
+            .headImg {
+                height: 60px;
+                img {
+                    height: 100%;
                 }
-                margin-right: 50px;
+            }
+            .headLinks {
+
+                a {
+                    display: inline-block;
+                    height: 60px;
+                    line-height: 60px;
+                    text-decoration: none;
+                    color: black;
+                    &:hover {
+                        color: #00ad9f;
+                    }
+                    margin-right: 50px;
+                }
             }
         }
     }
+
+
     .banner {
         overflow: hidden;
         //margin-top: 50px;
@@ -54,6 +60,7 @@
 
         .footLeft {
             color:#999999;
+            white-space: nowrap;
 
         }
         .footRight {

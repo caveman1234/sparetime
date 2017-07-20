@@ -36,18 +36,21 @@
 </style>
 
 <div class="head clearfix">
-	<div class="clearfix headWrap">
-		<div class="pull-left headImg" style="padding-top: 5px;padding-bottom: 5px;">
-			<img src="./imgs/LGGO.png" alt="图片">
-		</div>
-		<div class="pull-right headLinks">
-			<a href="./index4.html">首页</a>
-			<a href="./index1.html">服务项目</a>
-			<a href="./index5.html">招聘信息</a>
-			<a href="./index3.html">家政资讯</a>
-			<a href="./index2-1.html" class="blue">关于我们</a>
+	<div class="headBorder">
+		<div class="clearfix headWrap">
+			<div class="pull-left headImg" style="padding-top: 5px;padding-bottom: 5px;">
+				<img src="./imgs/LGGO.png" alt="图片">
+			</div>
+			<div class="pull-right headLinks">
+				<a href="./index4.html">首页</a>
+				<a href="./index1.html">服务项目</a>
+				<a href="./index5.html">招聘信息</a>
+				<a href="./index3.html">家政资讯</a>
+				<a href="./index2-1.html" class="blue">关于我们</a>
+			</div>
 		</div>
 	</div>
+
 
 	<div class="banner">
 		<img src="./imgs/img_we.png" alt="img....">
@@ -66,25 +69,40 @@
 	<div class="content">
 		<div class="content1">
 			<h3>公司简介</h3>
-			<p>
-				法轮大法好	法轮大法好	法轮大法好	法轮大法好	法轮大法好	法轮大法好	法轮大法好	法轮大法好
-				法轮大法好	法轮大法好	法轮大法好	法轮大法好	法轮大法好	法轮大法好	法轮大法好	法轮大法好
-				法轮大法好	法轮大法好	法轮大法好	法轮大法好	法轮大法好	法轮大法好	法轮大法好	法轮大法好
+			<p style="font-size: 14px;line-height: 25px;color:#666666;margin-top: 30px;text-indent: 2em;">
+				成都万家美洁家政服务公司,是卓越的服务型企业，精心打造专业的团队提供专业的保洁服务,公司主要从事家庭日常保洁、
+				家庭开荒保洁、地砖地毯清洗保养、厨卫保养、家电家具清洁、除甲醛等专项保洁,以及各类公司保洁.万家美洁为千家万户提供优质、
+				长期的服务而持续努力。
+
 			</p>
-			<p>
-				法轮大法好	法轮大法好	法轮大法好	法轮大法好	法轮大法好	法轮大法好	法轮大法好	法轮大法好
-			</p>
+
 			<div style="height: 30px;"></div>
 			<div id="map" style="width: 100%;height: 600px;"></div>
 		</div>
 		<div class="content2" style="display: none;">
-			<h1>222</h1>
-			<h1>222</h1>
-			<h1>222</h1>
-			<h1>222</h1>
-			<h1>222</h1>
-			<h1>222</h1>
-			<h1>222</h1>
+			<h3>我们的理念</h3>
+			<p>我们的理念是：品质服务,靓丽生活！</p>
+			<p>我们的原则是：勤劳敬业,细致热诚！</p>
+			<p>我们的目标是：品质高效,客户至上！</p>
+			<p>我们的愿景是：洁净心灵,爱心万家！</p>
+			<h3>我们的承诺：</h3>
+			<p>1、 无毛等机制灵活，单次收费，会员更低，客户可选择按面积或时付费。</p>
+			<p>2、 我们品质过硬，以客户为中心，公司规定各施工人员在施工中必须倾听客户等要求。</p>
+			<p>3、 我们等管理完善，有强大等客户管理系统，对客户及时、定期回访，保证工程质量和后期维护。</p>
+			<p>4、 我们公司为所有保洁人员投保施工作业意外伤害险，确保甲乙双方都无后顾之忧。</p>
+			<h3>我们的保障：</h3>
+			<p>1、 员工数量充足（3500余人）</p>
+			<p>2、 员工素质高（思想素质高，服务态度好，经验丰富，经过专业培训）</p>
+			<p>3、 公司管理严格（对每一次服务，公司都要指导、督促、回访、考核、奖惩。）</p>
+
+
+
+
+
+
+
+
+
 		</div>
 	</div>
 
@@ -97,10 +115,10 @@
 
 
 
-<div class="foot  clearfix">
+<<div class="foot  clearfix">
 	<div class="footContent clearfix">
 		<div class="col-md-6 footLeft">
-			版权所有:xxxxxxxxxxxxxxxxxxxxx
+			万家保洁有限公司 | 川ICP备16057509号-2 | © Copyright©2010-2017
 		</div>
 		<div class="col-md-6 footRight clearfix">
 
@@ -112,9 +130,8 @@
 			</span>
 		</div>
 	</div>
-
-
 </div>
+
 <script>
 	$('.titleHook').on('click',function () {
 		var index = $(this).index();
@@ -132,7 +149,7 @@
         document.body.appendChild(script);
         script.onload =  function () {
             var map = new BMap.Map('map');
-            var poi = new BMap.Point(103.970186,30.67737);//全有
+            var poi = new BMap.Point(104.061577,30.621183);//万家美保洁
 //            var poi = new BMap.Point(104.072135,30.663571);//cityCenter
             var cityCenter = new BMap.Point(104.072135,30.663571);
 //            map.centerAndZoom(poi, 12);
@@ -143,17 +160,18 @@
 
 
 
+
             var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
                     '<img src="./imgs/baidu.png" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
-                    '地址：成都市青羊区光华中心a座2楼<br/>电话：(028)65063772<br/>简介：全有家居，全有家居，全有家居，全有家居，全有家居，全有家居，' +
+                    '地址：四川省成都市高新区紫竹中街2号1栋5-37<br/>服务热线：028-69212222<br/>公司传真：028-69212222<br/>简介：成都万家美洁家政服务公司,是卓越的服务型企业，精心打造专业的团队提供专业的保洁服务,公司主要从事家庭日常保洁、家庭开荒保洁、地砖地毯清洗保养、厨卫保养、家电家具清洁、除甲醛等专项保洁,以及各类公司保洁.万家美洁为千家万户提供优质、长期的服务而持续努力。' +
                     '</div>';
 
             //创建检索信息窗口对象
             var searchInfoWindow = null;
             searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
-                title  : "全有家居",      //标题
-                width  : 330,             //宽度
-                height : 110,              //高度
+                title  : "万家美洁",      //标题
+                width  : 400,             //宽度
+                height : 180,              //高度
                 panel  : "panel",         //检索结果面板
                 enableAutoPan : true,     //自动平移
                 searchTypes   :[]

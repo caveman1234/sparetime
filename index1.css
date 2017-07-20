@@ -83,6 +83,10 @@
         border-right: 10px solid transparent;
         border-left: 10px solid transparent;
         border-bottom: 10px solid white; }
+      .body .content2 .wrap ul li {
+        line-height: 30px;
+        font-size: 14px;
+        color: #666666; }
   .body .content3 {
     margin-top: 20px;
     padding-bottom: 80px; }
@@ -104,6 +108,10 @@
         border-right: 10px solid transparent;
         border-left: 10px solid transparent;
         border-bottom: 10px solid white; }
+      .body .content3 .wrap ul li {
+        line-height: 30px;
+        font-size: 14px;
+        color: #666666; }
   .body .content4 {
     margin-top: 20px;
     padding-bottom: 80px; }
@@ -125,5 +133,9 @@
         border-right: 10px solid transparent;
         border-left: 10px solid transparent;
         border-bottom: 10px solid white; }
+      .body .content4 .wrap ul li {
+        line-height: 30px;
+        font-size: 14px;
+        color: #666666; }
 
 /*# sourceMappingURL=index1.css.map */
