@@ -32,7 +32,10 @@
       margin-bottom: 15px;
       padding: 10px; }
       .body .content .item:hover {
-        box-shadow: 0 0 7px 1px rgba(222, 222, 222, 0.7); }
+        webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        -webkit-transform: translate3d(0, -2px, 0);
+        transform: translate3d(0, -2px, 0); }
       .body .content .item .media .media-body div {
         line-height: 30px; }
         .body .content .item .media .media-body div span {

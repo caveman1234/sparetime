@@ -43,7 +43,11 @@
             margin-bottom: 15px;
             padding: 10px;
             &:hover{
-                box-shadow: 0 0 7px 1px rgba(222,222,222,0.7);
+                //box-shadow: 0 0 7px 1px rgba(222,222,222,0.7);
+                webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+                box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+                -webkit-transform: translate3d(0, -2px, 0);
+                transform: translate3d(0, -2px, 0);
             }
             .media{
                 .media-left{
