@@ -1,14 +1,30 @@
 img {
   max-width: 500% !important; }
 
+#img-hook {
+  position: relative; }
+  #img-hook::after {
+    content: url("./imgs/banner_1_1.png");
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    right: 0; }
+  #img-hook::before {
+    content: url("./imgs/banner_1_2.png");
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
 .body {
   overflow: hidden;
   background: white;
   padding-top: 20px; }
   .body .row1 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    margin-top: 100px;
-    padding-bottom: 100px; }
+    margin-top: 80px;
+    padding-bottom: 80px; }
     .body .row1 .container1 {
       width: 1100px;
       margin: 0 auto;
@@ -41,13 +57,12 @@ img {
             line-height: 30px; }
   .body .row2 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding-bottom: 100px; }
+    padding-bottom: 80px; }
     .body .row2 .container2 {
       width: 800px;
       margin: 0 auto;
       position: relative;
-      padding: 20px;
-      margin-top: 100px; }
+      margin-top: 80px; }
       .body .row2 .container2 .title {
         width: 205px;
         margin: 0 auto; }
@@ -98,13 +113,12 @@ img {
             color: #999999; }
   .body .row3 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding-bottom: 100px; }
+    padding-bottom: 80px; }
     .body .row3 .container3 {
       width: 800px;
       margin: 0 auto;
       position: relative;
-      padding: 20px;
-      margin-top: 100px; }
+      margin-top: 80px; }
       .body .row3 .container3 .title {
         width: 130px;
         margin: 20px auto; }
