@@ -165,14 +165,15 @@
     });
 
 
-	var newImg = new Image();
-	newImg.src = './imgs/img_home_banner.png';
-	newImg.onload = function (e) {
-		document.querySelector('.banner').style.backgroundImage = "url('./imgs/img_home_banner.png')"
-    };
-    newImg.onerror = function (e) {
-		debugger
-    }
+
+    function loadImg(urlArr){
+        urlArr.forEach(function (url) {
+			var img = new Image();
+			img.src = url;
+        });
+	}
+	var urlArr = ["./imgs/banner_2.png","./imgs/banner_1.png",'./imgs/img_baoz.png','./imgs/img_job.png','./imgs/img_1.png','./imgs/img_we.png'];
+    loadImg(urlArr);
 
 
 	
