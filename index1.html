@@ -163,6 +163,18 @@
 		var index = $(this).index();
 		$('.contentHook').eq(index).show().siblings().hide();
     });
+
+
+	var newImg = new Image();
+	newImg.src = './imgs/img_home_banner.png';
+	newImg.onload = function (e) {
+		document.querySelector('.banner').style.backgroundImage = "url('./imgs/img_home_banner.png')"
+    };
+    newImg.onerror = function (e) {
+		debugger
+    }
+
+
 	
 	
 
