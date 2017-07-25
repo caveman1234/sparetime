@@ -7,14 +7,14 @@ img {
     content: url("./imgs/banner_1_1.png");
     position: absolute;
     z-index: 1000;
-    top: 0;
-    right: 0; }
+    top: 90px;
+    right: 152px; }
   #img-hook::before {
     content: url("./imgs/banner_1_2.png");
     position: absolute;
     z-index: 1000;
     top: 50%;
-    left: 50%;
+    left: 418px;
     transform: translate(-50%, -50%); }
 
 .body {
