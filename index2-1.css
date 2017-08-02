@@ -64,7 +64,7 @@
       .body .content .content1 p {
         line-height: 25px; }
     .body .content .content2 {
-      padding: 20px; }
+      padding: 10px 20px 20px 20px; }
       .body .content .content2::after {
         content: '';
         width: 0;
@@ -81,7 +81,7 @@
         line-height: 50px;
         position: relative;
         color: #00ad9f;
-        margin-bottom: 30px; }
+        margin-bottom: 10px; }
         .body .content .content2 h3::after {
           content: '';
           width: 47px;
