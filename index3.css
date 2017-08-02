@@ -6,8 +6,6 @@
   padding-top: 30px;
   padding-bottom: 30px; }
   .body .content {
-    webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     width: 1000px;
     margin: 0 auto;
     background: white;
