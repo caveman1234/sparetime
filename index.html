@@ -1,61 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>首页</title>
-	<script src="js/jquery-3.2.0.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="./common.css">
-	<link rel="stylesheet" href="./index.css">
-	<link rel="shortcut icon" href="imgs/icon.png" />
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="imgs/icon.png" />
 
 </head>
+<script>
+    var system = {
+        win: false,
+        mac: false,
+        xll: false
+    };
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    if (system.win || system.mac || system.xll) {
+
+    } else {
+        window.location.href = "./phone/index.html";
+    }
+</script>
 
 
 <div class="head clearfix">
-	<div class="headBorder">
-		<div class="clearfix headWrap">
-			<div class="pull-left headImg" style="padding-top: 5px;padding-bottom: 5px;">
-				<img src="./imgs/LGGO.png" alt="图片">
-			</div>
-			<div class="pull-right headLinks">
-				<a href="./index.html" class="blue">首页</a>
-				<a href="./service.html">服务项目</a>
-				<a href="./jobs.html">招聘信息</a>
-				<a href="./advisory.html">家政资讯</a>
-				<a href="./aboutus.html">关于我们</a>
-			</div>
-		</div>
-	</div>
+    <div class="headBorder">
+        <div class="clearfix headWrap">
+            <div class="pull-left headImg" style="padding-top: 5px;padding-bottom: 5px;">
+                <img src="./imgs/LGGO.png" alt="图片">
+            </div>
+            <div class="pull-right headLinks">
+                <a href="./index.html" class="blue">首页</a>
+                <a href="./service.html">服务项目</a>
+                <a href="./jobs.html">招聘信息</a>
+                <a href="./advisory.html">家政资讯</a>
+                <a href="./aboutus.html">关于我们</a>
+            </div>
+        </div>
+    </div>
 
 
 
 
-	<div id="carousel-example-generic" class="carousel slide banner" data-ride="carousel" data-interval="5000">
-		<ol class="carousel-indicators">
-			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		</ol>
-		<div class="carousel-inner" role="listbox" style="height: 500px;overflow: hidden;">
-			<div class="item active" id="img-hook">
-				<img src="./imgs/banner_2.png" alt="..." >
-				<div class="carousel-caption"></div>
-			</div>
-			<div class="item">
-				<img src="./imgs/banner_1.png" alt="..." >
-				<div class="carousel-caption"></div>
-			</div>
-		</div>
-		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	</div>
+    <div id="carousel-example-generic" class="carousel slide banner" data-ride="carousel" data-interval="5000">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox" style="height: 500px;overflow: hidden;">
+            <div class="item active" id="img-hook">
+                <img src="./imgs/banner_2.png" alt="...">
+                <div class="carousel-caption"></div>
+            </div>
+            <div class="item">
+                <img src="./imgs/banner_1.png" alt="...">
+                <div class="carousel-caption"></div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
 
 
@@ -73,152 +90,152 @@
 
 
 <div class="body">
-	<div class="row1">
-		<div class="container1">
-			<div class="title">
-				<h3><img src="./imgs/11.png" alt=""></h3>
-				<p>再忙碌的生活，也需要停下来享受清闲时光</p>
-			</div>
-			<div class="content clearfix">
-				<div class="col-md-4 clearfix" style="cursor: pointer;">
-					<a href="./index1.html">
-						<div class="left pull-left">
-							<div>
-								<img src="./imgs/img_home_baomu.png" alt="">
-							</div>
-						</div>
-						<div class="right pull-left">
-						<ul>
-							<li>1、家庭普通保洁</li>
-							<li>2、清洁沙发，地毯</li>
-							<li>3、拆洗灯具，抽油烟机</li>
-							<li>4、地板石材抛光打蜡</li>
-						</ul>
-					</div>
-					</a>
-				</div>
-				<div class="col-md-4 clearfix" style="cursor: pointer;">
-					<a href="./index1.html">
-						<div class="left pull-left">
-							<div>
-								<img src="./imgs/img_home_zhongdiangong.png" alt="">
-							</div>
-						</div>
-						<div class="right pull-left">
-						<ul>
-							<li>1、家庭保姆钟点工</li>
-							<li>2、月嫂钟点工</li>
-							<li>3、陪护钟点工</li>
-							<li>4、其它钟点工</li>
-						</ul>
-					</div>
-					</a>
+    <div class="row1">
+        <div class="container1">
+            <div class="title">
+                <h3><img src="./imgs/11.png" alt=""></h3>
+                <p>再忙碌的生活，也需要停下来享受清闲时光</p>
+            </div>
+            <div class="content clearfix">
+                <div class="col-md-4 clearfix" style="cursor: pointer;">
+                    <a href="./index1.html">
+                        <div class="left pull-left">
+                            <div>
+                                <img src="./imgs/img_home_baomu.png" alt="">
+                            </div>
+                        </div>
+                        <div class="right pull-left">
+                            <ul>
+                                <li>1、家庭普通保洁</li>
+                                <li>2、清洁沙发，地毯</li>
+                                <li>3、拆洗灯具，抽油烟机</li>
+                                <li>4、地板石材抛光打蜡</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 clearfix" style="cursor: pointer;">
+                    <a href="./index1.html">
+                        <div class="left pull-left">
+                            <div>
+                                <img src="./imgs/img_home_zhongdiangong.png" alt="">
+                            </div>
+                        </div>
+                        <div class="right pull-left">
+                            <ul>
+                                <li>1、家庭保姆钟点工</li>
+                                <li>2、月嫂钟点工</li>
+                                <li>3、陪护钟点工</li>
+                                <li>4、其它钟点工</li>
+                            </ul>
+                        </div>
+                    </a>
 
-				</div>
-				<div class="col-md-4 clearfix" style="cursor: pointer;">
-					<a href="./index1.html">
-						<div class="left pull-left">
-							<div>
-								<img src="./imgs/img_home_danweibaojie.png" alt="">
-							</div>
-						</div>
-						<div class="right pull-left">
-						<ul>
-							<li>1、对外承担医院学校</li>
-							<li>&nbsp&nbsp&nbsp&nbsp街道、单位办公楼、</li>
-							<li>&nbsp&nbsp&nbsp&nbsp等住场保洁。</li>
-						</ul>
-					</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row2 clearfix">
-		<div class="container2 clearfix">
-			<div class="title ">
-				<h3><img src="./imgs/22.png" alt=""></h3>
-				<p>一杯咖啡价格，家政服务全搞定</p>
-			</div>
-			<div class="col-md-6">
-				<h3>面积收费</h3>
-				<div>全面型：</div>
-				<div>1.00/平米，起价75元</div>
-				<div style="margin-top: 10px;">常规型</div>
-				<div>0.80元／平米，起价65元</div>
-			</div>
-			<div class="col-md-6">
-				<h3>时间收费</h3>
-				<div>会员客户：</div>
-				<div>36元每小时计费、半小时18元</div>
-				<div style="margin-top: 10px;">常规客户</div>
-				<div>72元每小时计费、半小时36元</div>
-			</div>
-			<h3 class="baojie" style="padding-top: 30px;">专项保洁</h3>
-			<div class="col-md-3">
-				<div>洗窗帘:</div>
-				<div>10.8/斤</div>
-			</div>
-			<div class="col-md-3">
-				<div>木地板打蜡:</div>
-				<div>10.8/平米</div>
-			</div>
-			<div class="col-md-3">
-				<div>地砖清洗:</div>
-				<div>10.8/平米</div>
-			</div>
-			<div class="col-md-3">
-				<div>卫生间保养:</div>
-				<div>10.8/平米</div>
-			</div>
-			<div class="col-md-3">
-				<div>凳子:</div>
-				<div>36元/张</div>
-			</div>
-			<div class="col-md-3">
-				<div>地毯清洗:</div>
-				<div>84/平米</div>
-			</div>
-			<div class="col-md-3">
-				<div>沙发清洗:</div>
-				<div>72/座</div>
-			</div>
-			<div class="col-md-3">
-				<div>冰箱:</div>
-				<div style="white-space: nowrap">156/双开门，132／单开门</div>
-			</div>
-		</div>
+                </div>
+                <div class="col-md-4 clearfix" style="cursor: pointer;">
+                    <a href="./index1.html">
+                        <div class="left pull-left">
+                            <div>
+                                <img src="./imgs/img_home_danweibaojie.png" alt="">
+                            </div>
+                        </div>
+                        <div class="right pull-left">
+                            <ul>
+                                <li>1、对外承担医院学校</li>
+                                <li>&nbsp&nbsp&nbsp&nbsp街道、单位办公楼、</li>
+                                <li>&nbsp&nbsp&nbsp&nbsp等住场保洁。</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row2 clearfix">
+        <div class="container2 clearfix">
+            <div class="title ">
+                <h3><img src="./imgs/22.png" alt=""></h3>
+                <p>一杯咖啡价格，家政服务全搞定</p>
+            </div>
+            <div class="col-md-6">
+                <h3>面积收费</h3>
+                <div>全面型：</div>
+                <div>1.00/平米，起价75元</div>
+                <div style="margin-top: 10px;">常规型</div>
+                <div>0.80元／平米，起价65元</div>
+            </div>
+            <div class="col-md-6">
+                <h3>时间收费</h3>
+                <div>会员客户：</div>
+                <div>36元每小时计费、半小时18元</div>
+                <div style="margin-top: 10px;">常规客户</div>
+                <div>72元每小时计费、半小时36元</div>
+            </div>
+            <h3 class="baojie" style="padding-top: 30px;">专项保洁</h3>
+            <div class="col-md-3">
+                <div>洗窗帘:</div>
+                <div>10.8/斤</div>
+            </div>
+            <div class="col-md-3">
+                <div>木地板打蜡:</div>
+                <div>10.8/平米</div>
+            </div>
+            <div class="col-md-3">
+                <div>地砖清洗:</div>
+                <div>10.8/平米</div>
+            </div>
+            <div class="col-md-3">
+                <div>卫生间保养:</div>
+                <div>10.8/平米</div>
+            </div>
+            <div class="col-md-3">
+                <div>凳子:</div>
+                <div>36元/张</div>
+            </div>
+            <div class="col-md-3">
+                <div>地毯清洗:</div>
+                <div>84/平米</div>
+            </div>
+            <div class="col-md-3">
+                <div>沙发清洗:</div>
+                <div>72/座</div>
+            </div>
+            <div class="col-md-3">
+                <div>冰箱:</div>
+                <div style="white-space: nowrap">156/双开门，132／单开门</div>
+            </div>
+        </div>
 
 
-	</div>
-	<div class="row3 clearfix">
-		<div class="container3">
-			<div class="title text-center">
-				<img style="margin-left: -50px;" src="./imgs/33.png" alt="">
-			</div>
-			<div class="col-md-3 hasNext">
-				<div>
-					<img src="./imgs/提交需求.png" alt="">
-				</div>
-			</div>
-			<div class="col-md-3 hasNext">
-				<div>
-					<img src="./imgs/确认需求.png" alt="">
-				</div>
-			</div>
-			<div class="col-md-3 hasNext">
-				<div>
-					<img src="./imgs/安排保姆.png" alt="">
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div>
-					<img src="./imgs/签约入驻.png" alt="">
-				</div>
-			</div>
+    </div>
+    <div class="row3 clearfix">
+        <div class="container3">
+            <div class="title text-center">
+                <img style="margin-left: -50px;" src="./imgs/33.png" alt="">
+            </div>
+            <div class="col-md-3 hasNext">
+                <div>
+                    <img src="./imgs/提交需求.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-3 hasNext">
+                <div>
+                    <img src="./imgs/确认需求.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-3 hasNext">
+                <div>
+                    <img src="./imgs/安排保姆.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <img src="./imgs/签约入驻.png" alt="">
+                </div>
+            </div>
 
-		</div>
-	</div>
+        </div>
+    </div>
 
 
 
@@ -235,20 +252,20 @@
 
 
 <div class="foot  clearfix">
-	<div class="footContent clearfix">
-		<div class="col-md-6 footLeft">
-			万家保洁有限公司 | 川ICP备16057509号-2 | © Copyright©2010-2017
-		</div>
-		<div class="col-md-6 footRight clearfix">
+    <div class="footContent clearfix">
+        <div class="col-md-6 footLeft">
+            万家保洁有限公司 | 川ICP备16057509号-2 | © Copyright©2010-2017
+        </div>
+        <div class="col-md-6 footRight clearfix">
 
-			<span class="pull-right">
+            <span class="pull-right">
 				<a href="#">联系我们</a> |
 				<a href="./jobs.html">加入我们</a> |
 				<a href="#">意见反馈</a> |
 				<a href="./service.html">服务项目</a>
 			</span>
-		</div>
-	</div>
+        </div>
+    </div>
 </div>
 
 
@@ -284,7 +301,6 @@
 
 
 <script>
-
 </script>
 
 
@@ -292,4 +308,5 @@
 
 
 </body>
+
 </html>
