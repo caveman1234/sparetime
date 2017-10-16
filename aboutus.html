@@ -1,60 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>关于我们</title>
-	<script src="js/jquery-3.2.0.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="./common.css">
-	<link rel="stylesheet" href="./aboutus.css">
-	<link rel="stylesheet" href="./css/SearchInfoWindow_min.css">
-	<link rel="shortcut icon" href="imgs/icon.png" />
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./aboutus.css">
+    <link rel="stylesheet" href="./css/SearchInfoWindow_min.css">
+    <link rel="shortcut icon" href="imgs/icon.png" />
 </head>
 <style>
-	#allmap {height: 500px;width:100%;overflow: hidden;}
-	#result {width:100%;font-size:12px;}
-	dl,dt,dd,ul,li{
-		margin:0;
-		padding:0;
-		list-style:none;
-	}
-	dt{
-		font-size:14px;
-		font-family:"微软雅黑";
-		font-weight:bold;
-		border-bottom:1px dotted #000;
-		padding:5px 0 5px 5px;
-		margin:5px 0;
-	}
-	dd{
-		padding:5px 0 0 5px;
-	}
-	li{
-		line-height:28px;
-	}
+    #allmap {
+        height: 500px;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    #result {
+        width: 100%;
+        font-size: 12px;
+    }
+    
+    dl,
+    dt,
+    dd,
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    dt {
+        font-size: 14px;
+        font-family: "微软雅黑";
+        font-weight: bold;
+        border-bottom: 1px dotted #000;
+        padding: 5px 0 5px 5px;
+        margin: 5px 0;
+    }
+    
+    dd {
+        padding: 5px 0 0 5px;
+    }
+    
+    li {
+        line-height: 28px;
+    }
 </style>
-
+<style>
+    .qqChart {
+        position: fixed;
+        right: 0;
+        top: 50%;
+        margin-top: -76px;
+        z-index: 1000;
+    }
+</style>
+<div class="qqChart">
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3091521838&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:3091521838:53" alt="点击这里给我发消息" title="点击这里给我发消息" /></a>
+</div>
 <div class="head clearfix">
-	<div class="headBorder">
-		<div class="clearfix headWrap">
-			<div class="pull-left headImg" style="padding-top: 5px;padding-bottom: 5px;">
-				<img src="./imgs/LGGO.png" alt="图片">
-			</div>
-			<div class="pull-right headLinks">
-				<a href="./index.html">首页</a>
-				<a href="./service.html">服务项目</a>
-				<a href="./jobs.html">招聘信息</a>
-				<a href="./advisory.html">家政资讯</a>
-				<a href="./aboutus.html" class="blue">关于我们</a>
-			</div>
-		</div>
-	</div>
+    <div class="headBorder">
+        <div class="clearfix headWrap">
+            <div class="pull-left headImg" style="padding-top: 5px;padding-bottom: 5px;">
+                <img src="./imgs/LGGO.png" alt="图片">
+            </div>
+            <div class="pull-right headLinks">
+                <a href="./index.html">首页</a>
+                <a href="./service.html">服务项目</a>
+                <a href="./jobs.html">招聘信息</a>
+                <a href="./advisory.html">家政资讯</a>
+                <a href="./aboutus.html" class="blue">关于我们</a>
+            </div>
+        </div>
+    </div>
 
 
-	<div class="banner" style="background-image: url('./imgs/img_we.png');background-size: cover;background-position: center;">
-		<!--<img src="./imgs/img_we.png" alt="img....">-->
-	</div>
+    <div class="banner" style="background-image: url('./imgs/img_we.png');background-size: cover;background-position: center;">
+        <!--<img src="./imgs/img_we.png" alt="img....">-->
+    </div>
 </div>
 
 
@@ -62,82 +90,82 @@
 
 
 <div class="body">
-	<div class="title text-center">
-		<span class="about-us-title titleHook">公司简介</span>
-		<span class="titleHook">公司理念</span>
-	</div>
-	<div class="content">
-		<div class="content1">
-			<h3>公司简介</h3>
-			<p style="font-size: 14px;line-height: 25px;color:#666666;margin-top: 30px;text-indent: 2em;" />
-				<h4>基本信息：</h4>
-				<div class="well well-lg">
-					<p style="text-indent: 0em;">公司名称：成都万家美洁清洁服务有限公司</p>
-					<p style="text-indent: 0em;">公司地址：成都高新区紫竹中街2号彩世界5楼37号</p>
-					<p style="text-indent: 0em;">公司电话：028-69212222</p>
-				</div>
-				<h4>介绍：</h4>
-				<div class="well well-lg">
-					<p style="text-indent: 2em;line-height: 35px;">
-						万家美洁家政公司,卓越的服务型企业，用专业的团队提供专业的保洁服务,主要从事家庭日常保洁、家庭开荒保洁、 地砖地毯清洗保养、厨卫保养、家电家具清洁、除甲醛等专项保洁,以及各类公司及社区承包保洁业务。万家美洁为千家万户提供优质、长期的服务而持续努力。
-					</p>
-					<p style="text-indent: 2em;line-height: 35px;">
-						万家美洁同时致力于汇报社会爱心服务，客户购买的每一份保洁服务都会产生1元爱心敬老基金，公司每季度都将会为敬老院购置生活必需品，并为他们提供免费的保洁服务；小善如涓流，点滴汇聚终成大海，美化心灵,我们同样在努力。
-					</p>
-				</div>
-				<h4>现状和规划：</h4>
-				<div class="well well-lg">
-					<p style="text-indent: 2em;line-height: 35px;">
-					万家美洁公司是以家庭日常保洁作为起步服务的，另外也包括地砖地毯清洗、沙发窗帘的清洗、空调油烟机清洗保养等一系列的专项保洁项目，在将来也会涉及到更广的保洁范围，例如办公楼等。
-					</p>
-					<p style="text-indent: 2em;line-height: 35px;">
-					目前，公司已经接入了若干家庭保洁服务单，有大量的固定会员客户，也有一些临时客户来源；并且已经与两个社区达成合作事宜，承包其社区内部办公楼的清洁服务，公司业务量会越来越多，规模正在逐步扩大。我们坚信在公司全体员工的共同努力之下，我们的服务会更加优质，我们将以更好的状态、更认真的态度、更饱满的精力，去创造，去拼搏，去努力，和企业一起成长! 	
-					</p>
-				</div>
-				
-				
-				
-
-			</p>
-
-			<div style="height: 30px;"></div>
-			<div id="map" style="width: 100%;height: 600px;"></div>
-		</div>
-		<div class="content2" style="display: none;">
-			<h3>公司理念</h3>
-			<p style="font-size: 14px;line-height: 25px;color:#666666;margin-top: 30px;text-indent: 2em;" />
-			<h4>我们的理念：</h4>
-			<div class="well well-lg">
-				<p style="text-indent: 2em;">
-					1、每一刻，我们都在追求卓越：万家美洁的核心理念就是追求卓越，‚每一刻，我们都在追求卓越表现了人们对于事业的诉求：‚激情、执着、追求完美、不断超越‛。追求卓越是万家美洁取得成功和保持行业领先的关键。
-				</p>
-				<p style="text-indent: 2em;">
-					2、万家美洁视员工为最亲密的伙伴：公司与员工之间不仅仅是雇佣关系，员工对于我们公司来说是一起奋斗、成长的最亲密的伙伴。
-				</p>
-				<p style="text-indent: 2em;">
-					3、让顾客满意，让顾客的顾客更满意：我们公司时刻关注着：如何使我们的顾客更有竞争力？什么是顾客成功的关键因素？我们相信：任何能使我们的顾客更有竞争力的因素都不可避免地给我们及我们的客户带来利益。
-				</p>
-				<p style="text-indent: 2em;">
-					4、专于生活，精于品质，真诚为您！’是我们经营的宗旨：我们公司坚持以客户需求为中心来确定服务内容和方式，以服务为宗旨，同样与合作伙伴建立良好的合作关系，随时互相沟通完善，力争将公司的服务做的更加完善。
-				</p>
-			</div>
-			<h4>我们的承诺：</h4>
-			<div class="well well-lg">
-				<p>1、我们机制灵活，单次收费，会员更低，客户可选择按面积或计时付费。</p>
-				<p>2、我们品质过硬，以客户为中心，公司规定各施工人员在施工中必须倾听客户的要求。</p>
-				<p>3、我们管理完善，有强大的客户管理系统，对客户及时、定期回访，保证工程质量和后期维护。</p>
-				<p>4、我们公司为所有保洁人员投保施工作业意外伤害险，确保甲乙双方都无后顾之忧。</p>
-			</div>
+    <div class="title text-center">
+        <span class="about-us-title titleHook">公司简介</span>
+        <span class="titleHook">公司理念</span>
+    </div>
+    <div class="content">
+        <div class="content1">
+            <h3>公司简介</h3>
+            <p style="font-size: 14px;line-height: 25px;color:#666666;margin-top: 30px;text-indent: 2em;" />
+            <h4>基本信息：</h4>
+            <div class="well well-lg">
+                <p style="text-indent: 0em;">公司名称：成都万家美洁清洁服务有限公司</p>
+                <p style="text-indent: 0em;">公司地址：成都高新区紫竹中街2号彩世界5楼37号</p>
+                <p style="text-indent: 0em;">公司电话：028-69212222</p>
+            </div>
+            <h4>介绍：</h4>
+            <div class="well well-lg">
+                <p style="text-indent: 2em;line-height: 35px;">
+                    万家美洁家政公司,卓越的服务型企业，用专业的团队提供专业的保洁服务,主要从事家庭日常保洁、家庭开荒保洁、 地砖地毯清洗保养、厨卫保养、家电家具清洁、除甲醛等专项保洁,以及各类公司及社区承包保洁业务。万家美洁为千家万户提供优质、长期的服务而持续努力。
+                </p>
+                <p style="text-indent: 2em;line-height: 35px;">
+                    万家美洁同时致力于汇报社会爱心服务，客户购买的每一份保洁服务都会产生1元爱心敬老基金，公司每季度都将会为敬老院购置生活必需品，并为他们提供免费的保洁服务；小善如涓流，点滴汇聚终成大海，美化心灵,我们同样在努力。
+                </p>
+            </div>
+            <h4>现状和规划：</h4>
+            <div class="well well-lg">
+                <p style="text-indent: 2em;line-height: 35px;">
+                    万家美洁公司是以家庭日常保洁作为起步服务的，另外也包括地砖地毯清洗、沙发窗帘的清洗、空调油烟机清洗保养等一系列的专项保洁项目，在将来也会涉及到更广的保洁范围，例如办公楼等。
+                </p>
+                <p style="text-indent: 2em;line-height: 35px;">
+                    目前，公司已经接入了若干家庭保洁服务单，有大量的固定会员客户，也有一些临时客户来源；并且已经与两个社区达成合作事宜，承包其社区内部办公楼的清洁服务，公司业务量会越来越多，规模正在逐步扩大。我们坚信在公司全体员工的共同努力之下，我们的服务会更加优质，我们将以更好的状态、更认真的态度、更饱满的精力，去创造，去拼搏，去努力，和企业一起成长!
+                </p>
+            </div>
 
 
+
+
+            </p>
+
+            <div style="height: 30px;"></div>
+            <div id="map" style="width: 100%;height: 600px;"></div>
+        </div>
+        <div class="content2" style="display: none;">
+            <h3>公司理念</h3>
+            <p style="font-size: 14px;line-height: 25px;color:#666666;margin-top: 30px;text-indent: 2em;" />
+            <h4>我们的理念：</h4>
+            <div class="well well-lg">
+                <p style="text-indent: 2em;">
+                    1、每一刻，我们都在追求卓越：万家美洁的核心理念就是追求卓越，‚每一刻，我们都在追求卓越表现了人们对于事业的诉求：‚激情、执着、追求完美、不断超越‛。追求卓越是万家美洁取得成功和保持行业领先的关键。
+                </p>
+                <p style="text-indent: 2em;">
+                    2、万家美洁视员工为最亲密的伙伴：公司与员工之间不仅仅是雇佣关系，员工对于我们公司来说是一起奋斗、成长的最亲密的伙伴。
+                </p>
+                <p style="text-indent: 2em;">
+                    3、让顾客满意，让顾客的顾客更满意：我们公司时刻关注着：如何使我们的顾客更有竞争力？什么是顾客成功的关键因素？我们相信：任何能使我们的顾客更有竞争力的因素都不可避免地给我们及我们的客户带来利益。
+                </p>
+                <p style="text-indent: 2em;">
+                    4、专于生活，精于品质，真诚为您！’是我们经营的宗旨：我们公司坚持以客户需求为中心来确定服务内容和方式，以服务为宗旨，同样与合作伙伴建立良好的合作关系，随时互相沟通完善，力争将公司的服务做的更加完善。
+                </p>
+            </div>
+            <h4>我们的承诺：</h4>
+            <div class="well well-lg">
+                <p>1、我们机制灵活，单次收费，会员更低，客户可选择按面积或计时付费。</p>
+                <p>2、我们品质过硬，以客户为中心，公司规定各施工人员在施工中必须倾听客户的要求。</p>
+                <p>3、我们管理完善，有强大的客户管理系统，对客户及时、定期回访，保证工程质量和后期维护。</p>
+                <p>4、我们公司为所有保洁人员投保施工作业意外伤害险，确保甲乙双方都无后顾之忧。</p>
+            </div>
 
 
 
 
 
 
-		</div>
-	</div>
+
+
+        </div>
+    </div>
 
 
 
@@ -149,69 +177,69 @@
 
 
 <div class="foot  clearfix">
-	<div class="footContent clearfix">
-		<div class="col-md-6 footLeft">
-			万家保洁有限公司 | 川ICP备16057509号-2 | © Copyright©2010-2017
-		</div>
-		<div class="col-md-6 footRight clearfix">
+    <div class="footContent clearfix">
+        <div class="col-md-6 footLeft">
+            万家保洁有限公司 | 川ICP备16057509号-2 | © Copyright©2010-2017
+        </div>
+        <div class="col-md-6 footRight clearfix">
 
-			<span class="pull-right">
+            <span class="pull-right">
 				<a href="#">联系我们</a> |
 				<a href="./jobs.html">加入我们</a> |
 				<a href="#">意见反馈</a> |
 				<a href="./service.html">服务项目</a>
 			</span>
-		</div>
-	</div>
+        </div>
+    </div>
 </div>
 
 <script>
-	$('.titleHook').on('click',function () {
-		var index = $(this).index();
-		if(!$(this).hasClass('about-us-title')){
-		    $(this).addClass('about-us-title').siblings().removeClass('about-us-title');
-		    $('body .content > div').eq(index).show().siblings().hide();
-		}
+    $('.titleHook').on('click', function() {
+        var index = $(this).index();
+        if (!$(this).hasClass('about-us-title')) {
+            $(this).addClass('about-us-title').siblings().removeClass('about-us-title');
+            $('body .content > div').eq(index).show().siblings().hide();
+        }
     });
 
-	//地图
+    //地图
 
     function initialize() {
         var script = document.createElement("script");
         script.src = "./js/SearchInfoWindow_min.js";
         document.body.appendChild(script);
-        script.onload =  function () {
+        script.onload = function() {
             var map = new BMap.Map('map');
-            var poi = new BMap.Point(104.061577,30.621183);//万家美保洁
-//            var poi = new BMap.Point(104.072135,30.663571);//cityCenter
-            var cityCenter = new BMap.Point(104.072135,30.663571);
-//            map.centerAndZoom(poi, 12);
+            var poi = new BMap.Point(104.061577, 30.621183); //万家美保洁
+            //            var poi = new BMap.Point(104.072135,30.663571);//cityCenter
+            var cityCenter = new BMap.Point(104.072135, 30.663571);
+            //            map.centerAndZoom(poi, 12);
             map.centerAndZoom(cityCenter, 12);
-            map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
-            map.setCurrentCity("成都");          // 设置地图显示的城市 此项是必须设置的
-            map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+            map.addControl(new BMap.MapTypeControl()); //添加地图类型控件
+            map.setCurrentCity("成都"); // 设置地图显示的城市 此项是必须设置的
+            map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
 
 
 
 
             var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
-                    '<img src="./imgs/baidu_1.png" alt="" style="float:right;zoom:1;overflow:hidden;width:145px;height:100px;margin-left:3px;"/>' +
-                    '地址：成都高新区紫竹中街2号彩世界5楼37号<br/>服务热线：028-69212222<br/>公司传真：028-69212222<br/>简介：成都万家美洁家政服务公司,是卓越的服务型企业，精心打造专业的团队提供专业的保洁服务,公司主要从事家庭日常保洁、家庭开荒保洁、地砖地毯清洗保养、厨卫保养、家电家具清洁、除甲醛等专项保洁,以及各类公司保洁.万家美洁为千家万户提供优质、长期的服务而持续努力。' +
-                    '</div>';
+                '<img src="./imgs/baidu_1.png" alt="" style="float:right;zoom:1;overflow:hidden;width:145px;height:100px;margin-left:3px;"/>' +
+                '地址：成都高新区紫竹中街2号彩世界5楼37号<br/>服务热线：028-69212222<br/>公司传真：028-69212222<br/>简介：成都万家美洁家政服务公司,是卓越的服务型企业，精心打造专业的团队提供专业的保洁服务,公司主要从事家庭日常保洁、家庭开荒保洁、地砖地毯清洗保养、厨卫保养、家电家具清洁、除甲醛等专项保洁,以及各类公司保洁.万家美洁为千家万户提供优质、长期的服务而持续努力。' +
+                '</div>';
 
             //创建检索信息窗口对象
             var searchInfoWindow = null;
             searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
-                title  : "万家美洁",      //标题
-                width  : 400,             //宽度
-                height : 180,              //高度
-                panel  : "panel",         //检索结果面板
-                enableAutoPan : true,     //自动平移
-                searchTypes   :[]
+                title: "万家美洁", //标题
+                width: 400, //宽度
+                height: 180, //高度
+                panel: "panel", //检索结果面板
+                enableAutoPan: true, //自动平移
+                searchTypes: []
             });
             var marker = new BMap.Marker(poi); //创建marker对象
             marker.enableDragging(); //marker可拖拽
-            marker.addEventListener("click", function(e){
+            marker.addEventListener("click", function(e) {
                 searchInfoWindow.open(marker);
             });
             map.addOverlay(marker); //在地图中添加marker
@@ -223,49 +251,49 @@
 
 
             //浏览器定位
-//            var geolocation = new BMap.Geolocation();
-//            geolocation.getCurrentPosition(function(r){
-//                if(this.getStatus() == BMAP_STATUS_SUCCESS){
-//
-//                   // var mk = new BMap.Marker(r.point);
-//                   // map.addOverlay(mk);
-//                   // map.panTo(r.point);//移动到这个点
-//
-//
-//
-//
-//                    var pt = new BMap.Point(104.072135,30.663571);//citycenter
-//                    var myIcon = new BMap.Icon("./imgs/fox.gif", new BMap.Size(150,160));
-//                    var marker2 = new BMap.Marker(r.point,{icon:myIcon});  // 创建标注
-////                    var marker2 = new BMap.Marker(pt,{icon:myIcon});  // citycenter
-//                    map.addOverlay(marker2);              // 将标注添加到地图中
-//                    marker2.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
-//
-//
-//                    var opts = {
-//                        position : r.point,    // 指定文本标注所在的地理位置
-//                        offset   : new BMap.Size(30, -30)    //设置文本偏移量
-//                    }
-//                    var label = new BMap.Label("我的位置", opts);  // 创建文本标注对象
-//                    label.setStyle({
-//                        color : "blue",
-//                        fontSize : "12px",
-//                        height : "20px",
-//                        lineHeight : "20px",
-//                        fontFamily:"微软雅黑"
-//                    });
-//                    map.addOverlay(label);
-//
-//
-//
-//
-//
-//
-//                }
-//                else {
-//
-//                }
-//            },{enableHighAccuracy: true})
+            //            var geolocation = new BMap.Geolocation();
+            //            geolocation.getCurrentPosition(function(r){
+            //                if(this.getStatus() == BMAP_STATUS_SUCCESS){
+            //
+            //                   // var mk = new BMap.Marker(r.point);
+            //                   // map.addOverlay(mk);
+            //                   // map.panTo(r.point);//移动到这个点
+            //
+            //
+            //
+            //
+            //                    var pt = new BMap.Point(104.072135,30.663571);//citycenter
+            //                    var myIcon = new BMap.Icon("./imgs/fox.gif", new BMap.Size(150,160));
+            //                    var marker2 = new BMap.Marker(r.point,{icon:myIcon});  // 创建标注
+            ////                    var marker2 = new BMap.Marker(pt,{icon:myIcon});  // citycenter
+            //                    map.addOverlay(marker2);              // 将标注添加到地图中
+            //                    marker2.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+            //
+            //
+            //                    var opts = {
+            //                        position : r.point,    // 指定文本标注所在的地理位置
+            //                        offset   : new BMap.Size(30, -30)    //设置文本偏移量
+            //                    }
+            //                    var label = new BMap.Label("我的位置", opts);  // 创建文本标注对象
+            //                    label.setStyle({
+            //                        color : "blue",
+            //                        fontSize : "12px",
+            //                        height : "20px",
+            //                        lineHeight : "20px",
+            //                        fontFamily:"微软雅黑"
+            //                    });
+            //                    map.addOverlay(label);
+            //
+            //
+            //
+            //
+            //
+            //
+            //                }
+            //                else {
+            //
+            //                }
+            //            },{enableHighAccuracy: true})
 
 
         };
@@ -280,9 +308,6 @@
     }
 
     window.onload = loadScript;
-
-
-
 </script>
 
 
@@ -290,4 +315,5 @@
 
 
 </body>
+
 </html>

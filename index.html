@@ -10,8 +10,16 @@
     <link rel="stylesheet" href="./common.css">
     <link rel="stylesheet" href="./index.css">
     <link rel="shortcut icon" href="imgs/icon.png" />
-
 </head>
+<style>
+    .qqChart {
+        position: fixed;
+        right: 0;
+        top: 50%;
+        margin-top: -76px;
+        z-index: 1000;
+    }
+</style>
 <script>
     var system = {
         win: false,
@@ -28,7 +36,9 @@
         window.location.href = "./phone/index.html";
     }
 </script>
-
+<div class="qqChart">
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3091521838&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:3091521838:53" alt="点击这里给我发消息" title="点击这里给我发消息" /></a>
+</div>
 
 <div class="head clearfix">
     <div class="headBorder">
@@ -59,10 +69,10 @@
                 <img src="./imgs/banner_2.png" alt="...">
                 <div class="carousel-caption"></div>
             </div>
-            <div class="item">
+            <!-- <div class="item">
                 <img src="./imgs/banner_1.png" alt="...">
                 <div class="carousel-caption"></div>
-            </div>
+            </div> -->
         </div>
         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
